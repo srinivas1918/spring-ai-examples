@@ -1,7 +1,6 @@
 # Board Game Buddy
 
-The example application that is built in the book Spring AI in Action. This
-folder contains the code from chapter 3, section 3.5.
+
 
 ## Quick Start
 You'll need an OpenAI API key. You can get one by signing up at
