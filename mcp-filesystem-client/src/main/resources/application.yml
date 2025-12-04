@@ -1,0 +1,35 @@
+
+
+spring:
+
+
+  application:
+    name: mcp-filesystem-client
+
+
+
+  ai:
+    ollama:
+      chat:
+        model: llama3.1
+
+        tools:
+          enabled: true
+    mcp:
+      client:
+        stdio:
+
+          connections:
+            filesystem:
+              command: 'npx.cmd'
+              args:
+                - '-y'
+                - '@modelcontextprotocol/server-filesystem'
+                - 'C:\Users\nalla\spring-ai-samples-main'
+
+        toolcallback:
+          enabled: true
+
+
+###http :8080/ask question="List all files" -b
+## this command calls tools in the server-filesystem
